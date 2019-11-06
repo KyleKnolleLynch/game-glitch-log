@@ -40,6 +40,8 @@ ul {
 
 .list-item {
   margin-bottom: 0.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
 }
 
 .btn {
@@ -63,7 +65,7 @@ ul {
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 0.7rem 2rem;
   z-index: 1;
@@ -78,14 +80,31 @@ nav a {
   margin: 0 0.25rem;
 }
 
+.auth-div {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.log-page {
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 5px;
+  font-size: 0.8rem;
+}
+
 .banner-title {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .log-list {
-  max-width: 200px;
-  text-align: left;
+  max-width: 20rem;
   margin: auto;
+  text-transform: capitalize;
 }
 
 
