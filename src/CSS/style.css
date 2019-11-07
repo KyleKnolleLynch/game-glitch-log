@@ -22,7 +22,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  padding: 0 3rem;
+  padding: 3rem 3rem;
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 ul {
@@ -41,7 +41,6 @@ ul {
 .list-item {
   margin-bottom: 0.5rem;
   padding: 0.3rem 1rem;
-  border-radius: 5px;
 }
 
 .btn {
@@ -55,7 +54,7 @@ ul {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .my-1 {
@@ -104,23 +103,25 @@ nav a {
   cursor: pointer;
 }
 
-.log-page {
-  position: relative;
+.banner-title {
+  margin-bottom: 2rem;
 }
 
-.banner-title {
-  padding: 2rem 0;
+.log-page {
+  overflow-y: scroll;
+  padding-bottom: 10rem;
 }
 
 .log-list {
-  max-width: 20rem;
-  margin: auto;
+  max-width: 25rem;
+  margin: 2rem auto;
+  border-radius: 5px;
 }
 
 .post-form {
   width: 70vw;
   max-width: 650px;
-  margin:  auto;
+  margin: auto;
   padding: 1.5rem;
   border: 2px solid #888;
 }
@@ -146,7 +147,7 @@ textarea {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: none;
-  border-bottom: 1px solid #ccc
+  border-bottom: 1px solid #ccc;
 }
 
 input[type='submit'],
@@ -158,4 +159,15 @@ input[type='submit'],
   color: inherit;
 }
 
+.log-details {
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  word-break: break-all;
+}
 
+.delete-btn {
+  color: rgb(177, 112, 69);
+  margin: 0.5rem 0;
+  cursor: pointer;
+  display: inline-block;
+}

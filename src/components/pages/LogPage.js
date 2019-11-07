@@ -1,28 +1,30 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import { LogContext } from '../../context/LogContext';
+import LogDetails from '../layout/LogDetails';
 
 const LogPage = () => {
   const { isLightTheme, dark, light } = useContext(ThemeContext);
   const { logs } = useContext(LogContext);
   const theme = isLightTheme ? light : dark;
-  console.log(logs);
-  return (
+  return logs.length === 0 ? (
+    <div
+      className='container center empty-log'
+      style={{ background: theme.bg, color: theme.syntax }}
+    >
+      <h3>No entries posted! Please post a glitch.</h3>
+    </div>
+  ) : (
     <div
       className='log-page container center'
       style={{ background: theme.bg, color: theme.syntax }}
     >
       <h1 className='banner-title ttc'>game glitch log</h1>
-      <h3 className='my-1 ttu'>Grand Theft Auto V</h3>
-      <ul className='log-list ttc'>
+      <div className='log-list ttc'>
         {logs.map(log => (
-          <a href='#!' key={log.id}>
-            <li className='list-item' style={{ background: theme.ui }}>
-              {log.title}
-            </li>
-          </a>
+          <LogDetails log={log} key={log.id} id={log.id} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

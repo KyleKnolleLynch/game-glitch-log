@@ -1,37 +1,22 @@
-import React, { createContext, useState } from 'react';
-import uuid from 'uuid';
+import React, { createContext, useReducer, useEffect } from 'react';
+import { logReducer } from '../reducers/logReducer';
 
 export const LogContext = createContext();
 
 const LogContextProvider = props => {
-  const [logs, setLogs] = useState([
-    {
-      title: 'rank up fast',
-      author: 'richard deckard',
-      id: uuid()
-    },
-    {
-      title: 'get cars for free',
-      author: 'ellen ripley',
-      id: uuid()
-    },
-    {
-      title: 'unlimited money glitch',
-      author: 'sarah connor',
-      id: uuid()
-    }
-  ]);
+  const [logs, dispatch] = useReducer(logReducer, [], () => { 
+  const  localData = localStorage.getItem('logs');
+  return localData ? JSON.parse(localData) : [];
+});
 
-  const addLog = (title, author) => {
-    setLogs([...logs, { title, author, id: uuid() }]);
-  };
-
-  const removeLog = id => {
-    setLogs(logs.filter(log => log.id !== id));
-  }
+  useEffect(() => {
+    localStorage.setItem('logs', JSON.stringify(logs))
+  }, [logs])
 
   return (
-    <LogContext.Provider value={{ logs, addLog, removeLog }}>{props.children}</LogContext.Provider>
+    <LogContext.Provider value={{ logs, dispatch }}>
+      {props.children}
+    </LogContext.Provider>
   );
 };
 

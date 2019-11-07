@@ -35,7 +35,7 @@ const Navbar = () => {
         className='sub-nav center'
         style={{ background: theme.ui, color: theme.syntax }}
       >
-        <a onClick={toggleAuth} className='auth-div ttc'>
+        <a href='#!' onClick={toggleAuth} className='auth-div ttc'>
           {isAuthenticated ? 'signed in' : 'signed out'}
         </a>
         <div>
