@@ -39,7 +39,9 @@ const Navbar = () => {
           {isAuthenticated ? 'signed in' : 'signed out'}
         </a>
         <div>
-          <h5>{logs.length} glitches posted</h5>
+          <h5>
+            {logs.length} {logs.length === 1 ? 'glitch' : 'glitches'} posted
+          </h5>
         </div>
         <Toggle />
       </div>

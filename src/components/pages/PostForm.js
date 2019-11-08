@@ -4,6 +4,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 const PostForm = props => {
   const { dispatch } = useContext(LogContext);
+  const [game, setGame] = useState('');
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [details, setDetails] = useState('');
@@ -12,11 +13,16 @@ const PostForm = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch({type: 'ADD_LOG', log: {
-      title,
-      author,
-      details
-    }});
+    dispatch({
+      type: 'ADD_LOG',
+      log: {
+        game,
+        title,
+        author,
+        details
+      }
+    });
+    setGame('');
     setTitle('');
     setAuthor('');
     setDetails('');
@@ -30,6 +36,17 @@ const PostForm = props => {
     >
       <form className='post-form ttc' onSubmit={handleSubmit}>
         <h2 className='center'>post glitch or method</h2>
+        <div className='form-group my-1'>
+          <input
+            type='text'
+            id='game'
+            className='form-text'
+            value={game}
+            onChange={e => setGame(e.target.value)}
+            required
+          />
+          <label htmlFor='game'>game</label>
+        </div>
         <div className='form-group my-1'>
           <input
             type='text'

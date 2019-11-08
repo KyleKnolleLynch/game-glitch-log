@@ -4,6 +4,7 @@ export const logReducer = (state, action) => {
   switch(action.type) {
     case 'ADD_LOG':
       return [...state, {
+        game: action.log.game,
         title: action.log.title,
         author: action.log.author,
         details: action.log.details,

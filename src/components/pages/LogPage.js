@@ -20,7 +20,7 @@ const LogPage = () => {
       style={{ background: theme.bg, color: theme.syntax }}
     >
       <h1 className='banner-title ttc'>game glitch log</h1>
-      <div className='log-list ttc'>
+      <div className='log-list'>
         {logs.map(log => (
           <LogDetails log={log} key={log.id} id={log.id} />
         ))}

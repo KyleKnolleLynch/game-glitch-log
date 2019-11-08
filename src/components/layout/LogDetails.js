@@ -9,6 +9,7 @@ const LogDetails = ({ log }) => {
 
   return (
     <div className='list-item log-details' style={{ background: theme.ui }}>
+      <h3>{log.game}</h3>
       <h4 className='list-item'>{log.title}</h4>
       <h5>posted by: {log.author}</h5>
       <p className='list-item'>{log.details}</p>
