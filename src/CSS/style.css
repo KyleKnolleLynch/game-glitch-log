@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
 
 :root {
   --primary-color: #0dafd8;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   line-height: 1.6;
   overflow: hidden;
 }
@@ -100,6 +100,10 @@ nav a {
   font-size: 0.9rem;
 }
 
+.sub-nav :nth-child(n) {
+  padding: 0.2rem;
+}
+
 .auth-div {
   cursor: pointer;
 }
@@ -137,10 +141,10 @@ nav a {
   color: #888;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
 select,
 textarea {
   display: block;
@@ -151,7 +155,7 @@ textarea {
   border-bottom: 1px solid #ccc;
 }
 
-input[type='submit'],
+input[type="submit"],
 .post-form button {
   font: inherit;
   display: block;
@@ -175,7 +179,7 @@ input[type='submit'],
   margin: 0.5rem 0;
   cursor: pointer;
   display: inline-block;
-} 
+}
 
 @media screen and (max-width: 500px) {
   nav a {
@@ -183,7 +187,7 @@ input[type='submit'],
   }
 
   .log-page,
-  .post-form, 
+  .post-form,
   .sub-nav {
     font-size: 0.7rem;
   }
