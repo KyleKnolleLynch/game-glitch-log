@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/game-glitch-log/static/css/main.3d29989a.chunk.css",
+    "main.js": "/game-glitch-log/static/js/main.73c29d64.chunk.js",
+    "main.js.map": "/game-glitch-log/static/js/main.73c29d64.chunk.js.map",
+    "runtime-main.js": "/game-glitch-log/static/js/runtime-main.8b8e9288.js",
+    "runtime-main.js.map": "/game-glitch-log/static/js/runtime-main.8b8e9288.js.map",
+    "static/js/2.a6506560.chunk.js": "/game-glitch-log/static/js/2.a6506560.chunk.js",
+    "static/js/2.a6506560.chunk.js.map": "/game-glitch-log/static/js/2.a6506560.chunk.js.map",
+    "index.html": "/game-glitch-log/index.html",
+    "precache-manifest.f5b22a7424c4773b03a478785117e44d.js": "/game-glitch-log/precache-manifest.f5b22a7424c4773b03a478785117e44d.js",
+    "service-worker.js": "/game-glitch-log/service-worker.js",
+    "static/css/main.3d29989a.chunk.css.map": "/game-glitch-log/static/css/main.3d29989a.chunk.css.map",
+    "static/js/2.a6506560.chunk.js.LICENSE.txt": "/game-glitch-log/static/js/2.a6506560.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b8e9288.js",
+    "static/js/2.a6506560.chunk.js",
+    "static/css/main.3d29989a.chunk.css",
+    "static/js/main.73c29d64.chunk.js"
+  ]
+}
