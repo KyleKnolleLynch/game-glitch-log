@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import LogPage from './components/pages/LogPage';
 import About from './components/pages/About';
 import PostForm from './components/pages/PostForm';
+import NotFound from '../src/components/pages/NotFound';
 import ThemeContextProvider from './context/ThemeContext';
 import AuthContextProvider from './context/AuthContext';
 import LogContextProvider from './context/LogContext';
@@ -15,7 +16,7 @@ const App = () => {
     <ThemeContextProvider>
       <AuthContextProvider>
         <LogContextProvider>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <Fragment>
               <Navbar />
               <Switch>
@@ -23,6 +24,7 @@ const App = () => {
                 <About exact path='/about' component={About} />
                 <Route exact path='/postForm' component={PostForm} />
               </Switch>
+              <NotFound />
             </Fragment>
           </Router>
         </LogContextProvider>
