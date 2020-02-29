@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc6b3fe3d4e81e6e3fed086839bc2d8a",
+    "revision": "dcd3131e6ec3c676cd23fa42c297c8b9",
     "url": "/game-glitch-log/index.html"
   },
   {
-    "revision": "9bef800a60b9079d2c65",
+    "revision": "26f299b1516d974223fe",
     "url": "/game-glitch-log/static/css/main.3d29989a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-glitch-log/static/js/2.98d824f5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9bef800a60b9079d2c65",
-    "url": "/game-glitch-log/static/js/main.4bb5e704.chunk.js"
+    "revision": "26f299b1516d974223fe",
+    "url": "/game-glitch-log/static/js/main.700e53bf.chunk.js"
   },
   {
     "revision": "8f549389151c1b4cbe5b",

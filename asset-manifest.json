@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/game-glitch-log/static/css/main.3d29989a.chunk.css",
-    "main.js": "/game-glitch-log/static/js/main.4bb5e704.chunk.js",
-    "main.js.map": "/game-glitch-log/static/js/main.4bb5e704.chunk.js.map",
+    "main.js": "/game-glitch-log/static/js/main.700e53bf.chunk.js",
+    "main.js.map": "/game-glitch-log/static/js/main.700e53bf.chunk.js.map",
     "runtime-main.js": "/game-glitch-log/static/js/runtime-main.8b8e9288.js",
     "runtime-main.js.map": "/game-glitch-log/static/js/runtime-main.8b8e9288.js.map",
     "static/js/2.98d824f5.chunk.js": "/game-glitch-log/static/js/2.98d824f5.chunk.js",
     "static/js/2.98d824f5.chunk.js.map": "/game-glitch-log/static/js/2.98d824f5.chunk.js.map",
     "index.html": "/game-glitch-log/index.html",
-    "precache-manifest.e6c1b1c23fc5b3bdeac9b02da244906c.js": "/game-glitch-log/precache-manifest.e6c1b1c23fc5b3bdeac9b02da244906c.js",
+    "precache-manifest.ec952e58a607831539e06ec0f6e1cb18.js": "/game-glitch-log/precache-manifest.ec952e58a607831539e06ec0f6e1cb18.js",
     "service-worker.js": "/game-glitch-log/service-worker.js",
     "static/css/main.3d29989a.chunk.css.map": "/game-glitch-log/static/css/main.3d29989a.chunk.css.map",
     "static/js/2.98d824f5.chunk.js.LICENSE.txt": "/game-glitch-log/static/js/2.98d824f5.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8b8e9288.js",
     "static/js/2.98d824f5.chunk.js",
     "static/css/main.3d29989a.chunk.css",
-    "static/js/main.4bb5e704.chunk.js"
+    "static/js/main.700e53bf.chunk.js"
   ]
 }
