@@ -21,10 +21,10 @@ const App = () => {
               <Navbar />
               <Switch>
                 <Route exact path='/' component={LogPage} />
-                <About exact path='/about' component={About} />
+                <Route exact path='/about' component={About} />
                 <Route exact path='/postForm' component={PostForm} />
+                <Route component={NotFound} />
               </Switch>
-              <NotFound />
             </Fragment>
           </Router>
         </LogContextProvider>
