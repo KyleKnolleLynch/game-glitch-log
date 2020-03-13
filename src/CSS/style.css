@@ -181,6 +181,32 @@ input[type="submit"],
   display: inline-block;
 }
 
+
+.modal {
+  width: 350px;
+  padding: 2rem;
+  margin: 10rem auto;
+  border-radius: 10px;
+}
+
+.modal input {
+  margin: 1rem 0;
+  padding: 0.3rem 0.1rem;
+}
+
+.modal div {
+  margin-top: 1rem;
+}
+
+.modal div a {
+  padding-left: 1.5rem;
+  text-decoration: underline;
+}
+
+.modal button {
+  width: 100%;
+}
+
 @media screen and (max-width: 500px) {
   nav a {
     font-size: 1rem;

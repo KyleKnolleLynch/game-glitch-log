@@ -25,9 +25,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/postForm'>
-              <strong>Post</strong>
-            </Link>
+            {isAuthenticated ? (
+              <Link to='/postForm'>
+                <strong>Post</strong>
+              </Link>
+            ) : (
+              <a href='#'>
+                <strong>Signup</strong>
+              </a>
+            )}
           </li>
         </ul>
       </nav>
@@ -36,7 +42,7 @@ const Navbar = () => {
         style={{ background: theme.ui, color: theme.syntax }}
       >
         <a href='#!' onClick={toggleAuth} className='auth-div ttc'>
-          {isAuthenticated ? 'signed in' : 'signed out'}
+          {isAuthenticated ? 'logout' : 'login'}
         </a>
         <div>
           <h5>
